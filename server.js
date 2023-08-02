@@ -121,12 +121,14 @@ app.get('/api/nearby', (req, res) => {
   // Check if there's a "title" query parameter in the URL
 const current_lat = req.query.lat;
 const current_lng = req.query.lng;
+const radius = req.query.radius;
+
 const nearbyLocations = [];
 for (const location of listOfGeoLocation) {
     const lat = location.latLng.lat
     const lng = location.latLng.lng
     const distance = haversineDistance(current_lat, current_lng, lat, lng);
-    if(distance<10){
+    if(distance<radius){
         nearbyLocations.push(location)
     }
 }
