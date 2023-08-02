@@ -118,21 +118,37 @@ app.use(bodyParser.json());
 
 // Get all nearby
 app.get('/api/nearby', (req, res) => {
+  console.log("nearby")
   // Check if there's a "title" query parameter in the URL
-const current_lat = req.query.lat;
-const current_lng = req.query.lng;
+const loc = req.query.location.split(",")
+console.log(loc)
+const current_lat = loc[0];
+const current_lng = loc[1];
 const radius = req.query.radius;
 
 const nearbyLocations = [];
 for (const location of listOfGeoLocation) {
-    const lat = location.latLng.lat
-    const lng = location.latLng.lng
-    const distance = haversineDistance(current_lat, current_lng, lat, lng);
-    if(distance<radius){
-        nearbyLocations.push(location)
+    const distance = haversineDistance(current_lat, current_lng, location.latLng.lat, location.latLng.lng);
+    console.log(distance < radius)
+    console.log(distance)
+    console.log(radius)
+
+    if(distance < radius){
+      const place = {
+        id: "",
+        icon: location.asset,
+        name: location.name,
+        geometry: {
+          location: {
+            lat: location.latLng.lat,
+            lng: location.latLng.lng
+          }
+        }
+      };
+      nearbyLocations.push(place)
     }
 }
-return res.json(nearbyLocations);
+return res.json({results : nearbyLocations});
 
 
 //   if (titleQuery) {
