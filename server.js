@@ -137,6 +137,56 @@ const listOfGeoLocation = [
       latLng: { lat: 12.899473, lng:77.649923 },
       name: "airbnb",
       asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.899487, lng:77.649902 },
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.899555, lng:77.649766 },
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.899557, lng:77.649719 },
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.899553, lng:77.649729},
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.899616, lng:77.649589},
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.899636, lng:77.649513},
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.899472, lng:77.650159},
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.899517, lng:77.650167},
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.8995935, lng:77.6500877},
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.90024, lng:77.65028},
+      name: "airbnb",
+      asset: "images/airbnb.png"
     }
   ];
 
