@@ -107,6 +107,36 @@ const listOfGeoLocation = [
       latLng: { lat: 12.897900, lng: 77.650363 },
       name: "airbnb",
       asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.899171, lng: 77.650590 },
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.899222, lng: 77.650475 },
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.899280, lng: 77.650341 },
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.899329, lng: 77.650213 },
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat:12.899374, lng: 77.650142 },
+      name: "airbnb",
+      asset: "images/airbnb.png"
+    },
+    {
+      latLng: { lat: 12.899473, lng:77.649923 },
+      name: "airbnb",
+      asset: "images/airbnb.png"
     }
   ];
 
