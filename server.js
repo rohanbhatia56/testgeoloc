@@ -201,7 +201,7 @@ app.get('/api/nearby', (req, res) => {
   console.log("nearby")
   // Check if there's a "title" query parameter in the URL
 const loc = req.query.location.split(",")
-console.log(req)
+console.log(req.query.location)
 const current_lat = loc[0];
 const current_lng = loc[1];
 const radius = req.query.radius;
